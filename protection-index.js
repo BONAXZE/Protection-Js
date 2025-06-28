@@ -38,7 +38,7 @@ const antiInspect = () => {
     const detectDevTools = () => {
         const devtools = /./;
         devtools.toString = function() {
-            document.body.innerHTML = '<h1 style="color:white;text-align:center;">تم الكشف عن محاولة فحص غير مصرح بها</h1>';
+            document.body.innerHTML = '<h1 style="color:white;text-align:center;">An unauthorized wipe attempt has been detected</h1>';
             window.location.reload();
             return '';
         };
